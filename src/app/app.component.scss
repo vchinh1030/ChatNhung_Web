@@ -1,0 +1,546 @@
+.toolbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+}
+
+.toolbar img {
+  margin: 0 16px;
+}
+
+.toolbar #twitter-logo {
+  height: 40px;
+  margin: 0 8px;
+}
+
+.toolbar #youtube-logo {
+  height: 40px;
+  margin: 0 16px;
+}
+
+.toolbar #twitter-logo:hover,
+.toolbar #youtube-logo:hover {
+  opacity: 0.8;
+}
+
+
+/* CSS Grid Header */
+::ng-deep .p-button {
+  text-transform: uppercase;
+}
+
+::ng-deep .grid_header_color {
+  background-color: #f8f9fa !important;
+  color: black !important;
+  font-weight: 600;
+  height: 50px;
+}
+
+::ng-deep .p-datatable .p-datatable-thead > tr > th.grid_header_color {
+  background-color: #ffffff !important;
+  color: black !important;
+  font-weight: 600;
+  height: 50px;
+}
+::ng-deep .p-datatable .p-datatable-thead > tr > th.text-highlight1{
+  color: #5921f3b9 !important;
+}
+
+::ng-deep .p-datatable-scrollable .p-datatable-thead > tr > th,
+.p-datatable-scrollable .p-datatable-tbody > tr > td,
+.p-datatable-scrollable .p-datatable-tfoot > tr > td {
+  justify-content: center;
+}
+
+:host ::ng-deep.p-datatable-scrollable .p-datatable-tbody > tr > td {
+  justify-content: center;
+}
+
+::ng-deep p-inputnumber {
+  width: 100%;
+}
+
+::ng-deep .p-treeselect {
+  width: 100%;
+}
+::ng-deep .p-password {
+  width: 100%;
+}
+
+::ng-deep .p-inputnumber {
+  width: 100%;
+}
+
+::ng-deep .p-inputtext {
+  width: 100%;
+}
+::ng-deep .p-input-icon-left {
+  width: 100%;
+}
+
+::ng-deep .p-calendar {
+  width: 100%;
+}
+
+::ng-deep .p-multiselect {
+  width: 100%;
+}
+
+::ng-deep .p-inputtextarea {
+  width: 100%;
+}
+
+::ng-deep .p-autocomplete {
+  width: 100%;
+}
+
+::ng-deep .p-colorpicker-preview,
+.p-fluid .p-colorpicker-preview.p-inputtext {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+}
+
+::ng-deep td > span.p-disabled {
+  opacity: 0.5;
+  background-color: white;
+  color: #000;
+}
+
+::ng-deep .text-center {
+  text-align: center;
+}
+
+::ng-deep .text-danger {
+  color: red;
+}
+
+::ng-deep .text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 35rem;
+}
+::ng-deep .p-dropdown-items {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  // max-width: 537px;
+}
+::ng-deep .title-text {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: -15px;
+  margin-bottom: 10px;
+}
+
+::ng-deep .height-fix-30rem > .p-datatable-wrapper {
+  min-height: calc(100vh - 30rem);
+  border: 1px solid #e9ecef;
+}
+
+::ng-deep .height-fix-27rem > .p-datatable-wrapper {
+  min-height: calc(100vh - 27rem);
+  border: 1px solid #e9ecef;
+}
+::ng-deep .p-inputgroup .p-inputwrapper>.p-component {
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+:host::ng-deep .w-100 {
+  display: inline-flex;
+  width: 100%;
+}
+:host::ng-deep .p-dropdown {
+  float: left;
+  background-color: rgba(246, 246, 246, 0.4) !important;
+  border: rgba(246, 246, 246, 0.4) !important;
+}
+:host::ng-deep .p-dropdown-label {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+:host::ng-deep .p-dropdown .p-dropdown-trigger {
+  width: 1rem;
+  color: black;
+}
+:host::ng-deep .p-dropdown-label.p-placeholder {
+  color: #000;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.icon-button {
+  padding-bottom: 10px;
+  background-color: rgba(246, 246, 246, 0.4) !important;
+  border: rgba(246, 246, 246, 0.4) !important;
+}
+.icon_history_chat {
+  position: relative;
+}
+.icon-button-history {
+  background-color: rgba(246, 246, 246, 0.4) !important;
+  border: rgba(246, 246, 246, 0.4) !important;
+}
+.dropdown-menu {
+  display: none; /* Ẩn theo mặc định */
+  position: absolute;
+  top: 30px; /* Điều chỉnh khoảng cách từ nút đến menu */
+  right: 0;
+  background-color: #bfbfbf;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  width: 150px;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 8px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Hiển thị menu khi thêm lớp .open */
+.icon_history_chat .dropdown-menu.open {
+  display: block;
+}
+.p-dropdown-panel>.p-dropdown-items-wrapper {
+  min-width: 100% !important;
+  overflow-y: auto !important;
+}
+
+.chat {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+// .card {
+//   display: flex;
+//   height: 90vh;
+//   border-radius: 0px !important;
+//   background-color: rgba(246, 246, 246, 0.4) !important;
+//   padding: 0.75rem;
+// }
+.card-chat {
+    height: 90vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgba(246, 246, 246, 0.4) !important;
+    background-clip: border-box;
+}
+.contacts_body {
+  display: block;
+  padding: 0rem 0 !important;
+  overflow-y: auto;
+  white-space: nowrap;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0rem;
+}
+
+.msg_card_body {
+  overflow-y: auto;
+}
+
+.card-header {
+  border-radius: 15px 15px 0 0 !important;
+  border-bottom: 0 !important;
+}
+
+.card-footer {
+  border-top: 0 !important;
+  background-color: rgba(246, 246, 246, 0.4) !important;
+  margin-top: 20px;
+}
+
+.container {
+  align-content: center;
+}
+
+.search {
+  border-radius: 15px 0 0 15px !important;
+  background-color: rgba(221, 221, 221, 0.4) !important;
+  border: 0 !important;
+  color: white !important;
+}
+
+.search:focus {
+  box-shadow: none !important;
+  outline: 0px !important;
+}
+
+.type_msg {
+  background-color: rgba(192, 192, 192, 0.3) !important;
+  border: 0 !important;
+  border-radius: 25px;
+  color: rgb(21, 21, 21) !important;
+  resize: none;
+  overflow: hidden;
+  display: inline;
+  padding: 15px;
+}
+
+.type_msg:focus {
+  box-shadow: none !important;
+  outline: 0px !important;
+}
+
+.attach_btn {
+  border-radius: 25px 0 0 25px !important;
+  background-color: rgba(190, 190, 190, 0.3) !important;
+  border: 0 !important;
+  color: rgb(0, 0, 0) !important;
+  cursor: pointer;
+}
+
+.send_btn {
+  background-color: rgba(190, 190, 190, 0.3) !important;
+  border: 0 !important;
+  border-radius: 0 25px 25px 0 !important;
+  color: rgb(0, 0, 0) !important;
+  cursor: pointer;
+}
+
+.search_btn {
+  border-radius: 0 15px 15px 0 !important;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  border: 0 !important;
+  color: white !important;
+  cursor: pointer;
+}
+
+.contacts {
+  list-style: none;
+  padding: 0;
+}
+
+.contacts li {
+  width: 100% !important;
+  padding: 5px 5px;
+  margin-bottom: 0px !important;
+}
+
+.contacts li:hover {
+  border-radius: 8px !important;
+  background-color: #e8e4e4;
+  cursor: pointer;
+}
+
+.active {
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.user_img {
+  height: 70px;
+  width: 70px;
+  border: 1.5px solid #f5f6fa;
+
+}
+
+.user_img_msg {
+  height: 40px;
+  width: 40px;
+  border: 1.5px solid #f5f6fa;
+
+}
+
+.img_cont {
+  position: relative;
+  height: 70px;
+  width: 70px;
+}
+
+.img_cont_msg {
+  height: 40px;
+  width: 40px;
+}
+
+.user_info {
+  display: flex;
+  margin-left: 0px;
+  justify-content: space-between;  /* Đặt phần tử con cách đều nhau */
+  align-items: center;             /* Căn giữa theo chiều dọc */
+  width: 100%;
+}
+
+.user_info span {
+  font-size: 13px;
+  color: rgb(14, 14, 14);
+}
+
+.user_info p {
+  font-size: 10px;
+  color: rgba(7, 7, 7, 0.6);
+}
+
+.msg_cotainer {
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 25px;
+  background-color: rgba(246, 246, 246, 0.4);
+  padding: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.msg_cotainer_send {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 10px;
+  border-radius: 25px;
+  background-color: #e8e4e4;
+  padding: 10px;
+  position: relative;
+}
+
+.msg_time {
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  color: rgba(0, 0, 0, 0.5);
+  padding-left: 10px;
+  padding-top: 12px;
+  font-size: 10px;
+}
+
+.msg_icon {
+  position: absolute;
+  left: 0;
+  bottom: -35px;
+  color: rgba(0, 0, 0, 0.5);
+  padding-left: 10px;
+  padding-top: 12px;
+  margin-right: 6px;
+  font-size: 10px;
+}
+.icon-md-heavy {
+  padding: 0px;
+  margin-right: 10px;
+  background-color: rgba(246, 246, 246, 0.4) !important;
+  border: rgba(246, 246, 246, 0.4) !important;
+}
+
+.msg_time_send {
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 10px;
+}
+
+.msg_head {
+  position: relative;
+}
+
+#action_menu_btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.action_menu {
+  z-index: 1;
+  position: absolute;
+  padding: 15px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 15px;
+  top: 30px;
+  right: 15px;
+  display: none;
+}
+
+.action_menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.action_menu ul li {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+}
+
+.action_menu ul li i {
+  padding-right: 10px;
+
+}
+
+.action_menu ul li:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.svg_loading {
+      position: absolute;
+      top: -18px;
+      width: 50px;
+      height: 60px;
+      display:inline-block;
+}
+@media(max-width: 576px) {
+  .contacts_card {
+      margin-bottom: 10px !important;
+      background-color: rgba(224, 224, 224, 0.4) !important;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(255, 206, 206);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ececec;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ececec;
+}
+
+
+
+

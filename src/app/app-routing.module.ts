@@ -7,10 +7,10 @@ import { NhungChatbotComponent } from './modules/nhung-chatbot/nhung-chatbot.com
 
 const routes: Routes = [
   {
-    path: 'chatbot/:id', component: NhungChatbotComponent,
+    path: 'chatbot/:chat_bot', component: NhungChatbotComponent,
   },
   { path: 'pages/notfound', component: NotfoundComponent },
-  { path: '**', redirectTo: 'chatbot/:id' }
+  { path: '**', redirectTo: 'chatbot/:chat_bot' }
 ];
 
 @NgModule({

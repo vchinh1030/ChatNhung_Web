@@ -17,7 +17,7 @@ export class NhungChatbotComponent {
     private messageService: MessageService,
     private route: ActivatedRoute,
     private cookieService: CookieService,
-    private dbService: IndexeddbService
+    private dbService: IndexeddbService,
   ) { }
   @ViewChild('chatContainer') private chatContainer!: ElementRef;
 
@@ -43,6 +43,8 @@ export class NhungChatbotComponent {
   id_mess: number = 0;
 
   ngOnInit(): void {
+    this.objChatBot.chatbot = this.route.snapshot.paramMap.get('chat_bot') || '';
+    console.log('ffff', this.objChatBot.chatbot)
     const storedIdChat = this.cookieService.get('id_chat');
     this.objChatBot.chat_id = storedIdChat;
     this.dbService.getByKey('Chats', storedIdChat).then(existingChat => {
@@ -119,8 +121,9 @@ export class NhungChatbotComponent {
     }
     this.loading = true;
     this.isIntroduct = true;
+    const chatbotId = 'CA504D2F-4C22-4ACF-9258-CA0104A1A71C';
     let objUserSend = {
-      chatbot: 'CA504D2F-4C22-4ACF-9258-CA0104A1A71C',
+      chatbot: this.objChatBot.chatbot,
       question: this.objChatBot.question,
       chat_id: this.objChatBot.chat_id
     }

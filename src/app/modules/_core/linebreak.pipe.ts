@@ -7,7 +7,10 @@ export class LinebreakPipe implements PipeTransform {
 
   transform(value: string): string {
     if (!value) return value;
-    // Thay ký tự xuống dòng thành <br> và giữ nguyên định dạng HTML (như **)
-    return value.replace(/\n/g, '<br>');
+    const formattedValue = value
+    .replace(/\n/g, '<br>') // Thay thế xuống dòng thành <br>
+    .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>'); // Thay **nội dung** thành <b>nội dung</b>
+
+  return formattedValue;
   }
 }

@@ -14,6 +14,7 @@ import { NhungChatbotComponent } from './modules/nhung-chatbot/nhung-chatbot.com
 import { DialogModule } from 'primeng/dialog';
 import { ToastModule } from 'primeng/toast';
 import { NgxIndexedDBModule, DBConfig } from 'ngx-indexed-db';
+import { LinebreakPipe } from './modules/_core/linebreak.pipe';
 const dbConfig: DBConfig = {
   name: 'QuanLy_LichSuChatBot',
   version: 2, // Tăng phiên bản nếu cần cập nhật cấu trúc
@@ -32,7 +33,8 @@ const dbConfig: DBConfig = {
   declarations: [
     AppComponent,
     NotfoundComponent,
-    NhungChatbotComponent
+    NhungChatbotComponent,
+    LinebreakPipe
   ],
   imports: [
     BrowserModule,
